@@ -6,8 +6,8 @@ import (
 
 // StudentCredentials represents student login credentials.
 type StudentCredentials struct {
-	Username string
-	Password string
+	Username int
+	Password int
 }
 
 // Student represents a college student.
@@ -81,14 +81,14 @@ func NewCollegeEnrollmentSystem() CollegeEnrollmentSystem {
 		Blocks:   []Block{blockA, blockB},
 		Students: []Student{student1, student2},
 	}
-}
+
 
 func (ces *CollegeEnrollmentSystem) ShowAvailableBlocks() {
 	fmt.Println("Available Blocks:")
 	for i, block := range ces.Blocks {
 		fmt.Printf("%d. %s\n", i+1, block.Name)
 	}
-}
+
 
 func main() {
 	// Create an array to store student credentials.
