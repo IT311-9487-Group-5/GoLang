@@ -17,6 +17,7 @@ type Student struct {
 	Contacts int
 	Enrolled bool // Add a field to track enrollment status
 	Block    int  // Add a field to track the enrolled block index
+}
 
 // Course represents a college course.
 type Course struct {
