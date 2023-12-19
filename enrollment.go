@@ -19,6 +19,8 @@ type Student struct {
 	Block    int  // Add a field to track the enrolled block index
 }
 
+	//TODO #4 CREATE FUNTION TITILE
+
 // Course represents a college course.
 type Course struct {
 	Name     string
