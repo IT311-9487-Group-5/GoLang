@@ -8,6 +8,7 @@ import (
 type StudentCredentials struct {
 	Username string
 	Password string
+	Email    string
 }
 
 // Student represents a college student.
