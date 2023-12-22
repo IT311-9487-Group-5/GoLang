@@ -1,16 +1,14 @@
 package main
 
-//COMMIT 1
-
 import (
 	"fmt"
 )
 
-
 // StudentCredentials represents student login credentials.
 type StudentCredentials struct {
-	Username int
-	Password int
+	Username string
+	Password string
+	Email    string
 }
 
 // Student represents a college student.
@@ -21,8 +19,6 @@ type Student struct {
 	Enrolled bool // Add a field to track enrollment status
 	Block    int  // Add a field to track the enrolled block index
 }
-
-	//TODO #4 CREATE FUNTION TITILE
 
 // Course represents a college course.
 type Course struct {
@@ -86,14 +82,14 @@ func NewCollegeEnrollmentSystem() CollegeEnrollmentSystem {
 		Blocks:   []Block{blockA, blockB},
 		Students: []Student{student1, student2},
 	}
-
+}
 
 func (ces *CollegeEnrollmentSystem) ShowAvailableBlocks() {
 	fmt.Println("Available Blocks:")
 	for i, block := range ces.Blocks {
 		fmt.Printf("%d. %s\n", i+1, block.Name)
 	}
-
+}
 
 func main() {
 	// Create an array to store student credentials.
